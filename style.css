@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #1f1f1f;
+    --headers-color: #650000;
+    --links-hover:#ee0000;
+    --block-color: #f3f3f3;
+    --white: #fff;
+    --body-bg:#d8d8d8;
+}
+body {
+    background-color: var(--body-bg);
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 115%;
+}
+ul {
+    list-style: disc inside;
+}
+ul > li {
+    margin: 15px 0 0 15px;
+}
+p {
+    margin: 15px 0 0 0;
+}
+strong {
+    font-weight: 600;
+}
+em {
+    font-style: italic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 115%;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 2.25rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+a {
+    color: var(--headers-color);
+}
+a:hover {
+    color: var(--links-hover);
+}
+.wrapper {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cv-top {
+    background-color: var(--headers-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+.cv-top-image {
+    width: 20%;
+}
+.cv-top-image img{
+    border: 2px dashed var(--white);
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+}
+.cv-top-info {
+    padding: 0 0 0 25px;
+    width: 50%;
+}
+.cv-top-contact {
+    background-color: var(--block-color);
+    border: 2px dashed var(--headers-color);
+    border-radius: 20px;
+    color: var(--main-color);
+    padding: 0 20px 20px;
+    width: 30%;
+}
+.cv-block {
+    background-color: var(--block-color);
+    border: 2px dashed var(--headers-color);
+    padding: 20px 20px;
+    margin: 30px 0 0 0;
+}
+.cv-block-title {
+    color: var(--headers-color);
+    font-weight: 500;
+}
+.border-bottom {
+    border-bottom: 1px solid var(--headers-color);
+    padding: 0 0 10px 0;
+}
+
+@media (max-width:900px) {
+    .cv-top-info,
+    .cv-top-contact {
+        width: 40%;
+    }
+}
+@media (max-width:768px) {
+    body {
+        font-size: 14px;
+    }
+    .cv-top {
+        display: block;
+    }
+    .cv-top-image {
+        width: 150px;
+    }
+    .cv-top-info {
+        padding: 0;
+        width: 100%;
+    }
+    .cv-top-contact {
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
