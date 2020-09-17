@@ -1,7 +1,7 @@
 # Valentyna Mykhailyshyn #
 **Front-end Developer**
 
-## Contact##
+## Contact ##
 
 ## Experience ##
 
